@@ -221,8 +221,6 @@ jQuery(function($){
 	if( $(document).width() <= 960)
 	{
 		$('header nav ul li.menu-item-has-children > a').click(function(){
-			
-		
 		 	$(this).toggleClass('rotate');
 
 	        var menu = $(this).next(); 
@@ -232,11 +230,20 @@ jQuery(function($){
 	        else{
 	            $(menu).slideDown(400);
 	        }
-			
 			return false;
-			
 		});
 	}
+
+
+	// Слайдер проектов на главной
+
+	$('.slider-case').slick({
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+		arrows: false,
+		infinite: true,
+		fade: true
+	});
 
 })
 	
