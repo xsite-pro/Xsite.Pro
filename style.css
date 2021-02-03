@@ -709,9 +709,7 @@ nav {}
 
 .slider-case {
 }
-.case {
-    position: relative;
-}
+.case {}
 .case__item {
     height: 100vh;
     min-height: 800px;
@@ -725,16 +723,51 @@ nav {}
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
 }
 .case__inner {
+    position: relative;
+    z-index: 2;
+    height: 100%;
 }
 .case__text {
+    max-width: 680px;
+    color: #fff;
+}
+.case__text-title {
+    margin-bottom: 70px;
 }
 
 
 
-
+.case__persons {
+    margin-bottom: 50px;
+}
+.case__persons-item {
+    width: 50%;
+    padding-right: 5%;
+}
+.case__persons-title {
+    font-size: 14px;
+    color: #6997cf;
+    margin-bottom: 14px;
+}
+.case__persons-name {
+    font-size: 18px;
+    color: #c8e1ff;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+}
+.case__text-info {
+    margin-bottom: 60px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6997cf;
+}
+.case__text-btn {
+}
+.btn-white {
+}
 
 
 
