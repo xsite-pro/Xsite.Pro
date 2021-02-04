@@ -585,9 +585,15 @@ nav {}
     right: 0;
     z-index: 999;
     width: 100%;
-    background-color: #fff;
     box-shadow: 0 0 81px rgb(0 1 3 / 12%);
+}
+.pick-menu__top {
     padding: 20px 0;
+    background-color: #fff;
+}
+.portfolio-page .pick-menu__top {
+    box-shadow: none;
+    border-bottom: 1px solid #ebebeb;
 }
 .logo {
     display: inline-block;
@@ -718,7 +724,7 @@ nav {}
 }
 
 
-.header {
+.main-screen {
     height: 100vh;
     min-height: 800px;
     background-image: url(images/pics/main_screen.jpg);
@@ -726,7 +732,7 @@ nav {}
     background-position: 50% 50%;
     background-size: cover;
 }
-.header__inner {}
+.main-screen__inner {}
 
 
 
@@ -1211,6 +1217,10 @@ body.menu-appear .drop-menu {
     font-weight: 600;
     color: #000;
     margin-bottom: 6px;
+    transition: .2s all;
+}
+.contact-list__side-brif:hover strong {
+    color: #ff8e48;
 }
 .contact-list__side-brif span {
     display: block;
@@ -1285,8 +1295,122 @@ body.menu-appear .drop-menu {
     background-size: 17px;
 }
 
-
-
-
-
 /* Футтер END */
+
+
+
+
+
+
+
+
+/* Страница портфолио START */
+
+.common-page {
+    height: 100vh;
+    min-height: 800px;
+    margin-top: 70px;
+}
+.portfolio {
+    height: 100%;
+    position: relative;
+    margin-top: 120px;
+}
+.portfolio-nav {
+    height: 100%;
+    background-color: #fff;
+}
+.portfolio-nav__inner {}
+
+.portfolio-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.portfolio-nav ul li {
+    display: block;
+    font-size: 12px;
+    padding: 16px 0;
+    line-height: 150%;
+    margin-right: 35px;
+    color: #6d6d6d;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s all;
+}
+.portfolio-nav ul li:last-child {
+    margin-right: 0;
+}
+.portfolio-nav ul li.active,
+.portfolio-nav ul li:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.portfolio-list {
+    height: 100%;
+    position: relative;
+}
+.portfolio__item {
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 50%;
+}
+.portfolio__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.portfolio__text {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 60px 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.portfolio__project {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.portfolio__title {
+    display: block;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    line-height: 100%;
+}
+
+
+/* Страница портфолио END */
+
+
+/* ИСПОЛЬЗОВАТЬ ГРИДЫ НА ПОРТФОЛИО */
+
+
+
+
+
+
+
+
