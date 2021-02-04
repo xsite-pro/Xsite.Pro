@@ -242,8 +242,30 @@ jQuery(function($){
   		slidesToScroll: 1,
 		arrows: false,
 		infinite: true,
-		fade: true
+		fade: true,
+		dots: true,
+		pauseOnHover: false,
+		autoplay: false,
+  		autoplaySpeed: 2000
 	});
+
+	$(document).on('click', '.menu-trigger', function(){
+
+        var menu = $('.drop-menu');
+
+        if( $(menu).is(':visible')){
+            $(menu).slideUp(300)
+            $('.menu-trigger__name').text('Меню')
+            $(this).removeClass('change')
+        }
+        else{
+            $(menu).slideDown(300)
+            $('.menu-trigger__name').text('Закрыть')
+            $(this).addClass('change')
+        }
+
+
+	})
 
 })
 	

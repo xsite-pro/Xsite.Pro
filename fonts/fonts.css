@@ -31,13 +31,34 @@
     font-display: swap;
 }
 
-
 @font-face {
 	font-family: 'Proxima Nova';
 	src: url('ProximaNova-Bold.eot');
 	src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
 	url('ProximaNova-Bold.woff') format('woff'),
 	url('ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('BebasNeueBold.eot');
+	src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+	url('BebasNeueBold.woff') format('woff'),
+	url('BebasNeueBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Code Pro';
+	src: url('Code-Pro-Bold.eot');
+	src: url('Code-Pro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('Code-Pro-Bold.woff') format('woff'),
+	url('Code-Pro-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
     font-display: swap;
