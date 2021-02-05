@@ -257,15 +257,52 @@ jQuery(function($){
             $(menu).slideUp(300)
             $('.menu-trigger__name').text('Меню')
             $(this).removeClass('change')
+            $('body').removeClass('menu-down')
         }
         else{
             $(menu).slideDown(300)
             $('.menu-trigger__name').text('Закрыть')
             $(this).addClass('change')
+            $('body').addClass('menu-down')
         }
 
 
 	})
 
+
+	// Скорол поэкранно
+	/*if($('#fullpage').lenght)
+	{*/
+		$('#fullpage').fullpage({
+			sectionSelector: '.page',
+			scrollOverflow: true
+		});
+	/*}*/
+
+	// Страница Портфолио плагин Isotop 
+
+	$grid = $('.portfolio-list').isotope({
+		itemSelector: '.portfolio__item',
+		layoutMode: 'fitRows'
+	});
+
+	$(document).on('click', '.portfolio-nav__item', function()
+	{
+		// Кастыль чтобы при наведении, в моменте сортировки, не прыгали блоки
+		/*$('.portfolio').addClass('block-hover')
+		setTimeout( function(){
+			$('.portfolio').removeClass('block-hover')
+		}, 2000 )*/
+
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({
+			filter: filterValue
+		});
+		$('.portfolio-nav__item').removeClass('active');
+		$(this).addClass('active');
+
+		
+	});
+
+
 })
-	

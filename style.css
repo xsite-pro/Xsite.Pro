@@ -541,6 +541,34 @@ header nav .menu_container .menu_wrapper .footer{
 }
 
 
+/* Скрытие скрола START */
+::-webkit-scrollbar-track {
+    background-color:#486eb7;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#ffbc00;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#ffbc00;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:0px;
+    height:0px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+/* Скрытие скрола END */
+
+
 header nav .menu_wrapper{}
 header nav .menu_wrapper ul li ul.sub-menu{
     position: absolute;
@@ -616,9 +644,23 @@ nav {}
     font-size: 14px;
     color: #000;
     font-weight: 600;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    transition: .2s all;
+}
+.menu-down .pick-menu__phone {
+    top: -60px;
 }
 .pick-menu__call {
     text-align: right;
+    position: relative;
+    top: 0;
+    transition: .2s all;
+    z-index: 2;
+}
+.menu-down .pick-menu__call {
+    top: -60px;
 }
 .pick-menu__call span {
     font-size: 12px;
@@ -745,6 +787,7 @@ nav {}
     right: 0;
     bottom: 0;
     width: 100%;
+    border-bottom: 5px solid #fd8b45;
     z-index: 900;
 }
 body.menu-appear .drop-menu {
@@ -1307,14 +1350,31 @@ body.menu-appear .drop-menu {
 /* Страница портфолио START */
 
 .common-page {
-    height: 100vh;
+    height: 100%;
     min-height: 800px;
     margin-top: 70px;
+}
+.common-page.extand {
+    padding-top: 130px;
 }
 .portfolio {
     height: 100%;
     position: relative;
     margin-top: 120px;
+}
+.portfolio.block-hover:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #fff;
+    opacity: 0;
 }
 .portfolio-nav {
     height: 100%;
@@ -1331,7 +1391,7 @@ body.menu-appear .drop-menu {
     font-size: 12px;
     padding: 16px 0;
     line-height: 150%;
-    margin-right: 35px;
+    margin-right: 38px;
     color: #6d6d6d;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -1349,63 +1409,272 @@ body.menu-appear .drop-menu {
 
 
 
-
-
-
-
-
 .portfolio-list {
     height: 100%;
     position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .portfolio__item {
     display: block;
     position: relative;
-    width: 25%;
-    height: 50%;
+    overflow: hidden;
+}
+.portfolio__item:before {
+    content:"";
+    display: block;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    z-index: 2;
+    background-color: #fff;
+    /*-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);*/
+    opacity: 0;
+    transition: .3s all;
+}
+.portfolio__item:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);*/
+    opacity: 0.7;
+}
+.portfolio__item-inside {
+    padding-top: 88.544%;
 }
 .portfolio__img {
     display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
+    transition: .4s all;
 }
+
+.portfolio__item:hover .portfolio__img {
+    transform: scale(1.2);
+}
+
+
+
 .portfolio__text {
     color: #fff;
     display: block;
     width: 100%;
     height: 100%;
     padding: 60px 50px;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
+    transition: .3s all;
 }
 .portfolio__project {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     font-weight: 300;
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+    opacity: 0.5;
+    position: relative;
+    text-shadow: 0px 2px 1px rgb(0 0 0 / 0%), 0 0 0px rgb(0 0 0 / 0%);
+    transition: .3s all;
 }
+.portfolio__item:hover .portfolio__project {
+    color: #000;
+    text-shadow: 0px 2px 1px rgb(0 0 0 / 30%), 0 0 0px rgb(0 0 0 / 30%);
+}
+.portfolio__project:before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #ff8e48;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: .8s all;
+}
+.portfolio__item:hover .portfolio__project:before {
+    width: 100%;
+}
+
 .portfolio__title {
     display: block;
     font-size: 40px;
     font-family: 'Bebas Neue';
-    line-height: 100%;
+    line-height: 120%;
+    text-shadow: 0px 2px 1px rgb(0 0 0 / 0%), 0 0 0px rgb(0 0 0 / 0%);
+    transition: .3s all;
+}
+.portfolio__item:hover .portfolio__title {
+    text-shadow: 0px 2px 1px rgb(0 0 0 / 30%), 0 0 0px rgb(0 0 0 / 30%);
+    color: #ff8e48;
 }
 
 
 /* Страница портфолио END */
 
 
-/* ИСПОЛЬЗОВАТЬ ГРИДЫ НА ПОРТФОЛИО */
+
+/* Cтраница услуг START */
+
+.common-page {
+}
+.service {
+}
+.service__inner {
+}
+.wr-bread-nav {}
+.bread-nav {
+    margin-bottom: 45px;
+}
+.bread-nav__link {
+    font-size: 12px;
+    color: #bababa;
+    transition: .2s all;
+}
+.bread-nav__link:hover {
+    color: #ff8e48;
+}
+.service__list {
+}
+.service__item {
+    width: 25%;
+    padding: 100px 60px 85px;
+    transition: .2s all;
+}
+.service__item:hover {
+    background-color: #ff7400;
+    color: #fff;
+}
+.service__img {
+    width: 76px;
+    height: 76px;
+    position: relative;
+    margin-bottom: 55px;
+}
+.service__img:before,
+.service__img:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: contain;
+    transition: .2s all;
+}
+.service__img:before {
+    background-image: url(images/icons/developer.svg);
+    opacity: 1;
+}
+.service__img:after {
+    background-image: url(images/icons/developer-white.svg);
+    opacity: 0;
+}
+.service__item:hover .service__img:before {
+    opacity: 0;
+}
+.service__item:hover .service__img:after {
+    opacity: 1;
+}
+
+.service__img.bg1:before {
+    background-image: url(images/icons/developer.svg);
+    background-size: 76px;
+}
+.service__img.bg2:before {
+    background-image: url(images/icons/paint-palette.svg);
+}
+.service__img.bg3:before {
+    background-image: url(images/icons/growth.svg);
+}
+.service__img.bg4:before {
+    background-image: url(images/icons/cogwheels.svg);
+}
+.service__img.bg1:after {
+    background-image: url(images/icons/developer-white.svg);
+    background-size: 76px;
+}
+.service__img.bg2:after {
+    background-image: url(images/icons/paint-palette-white.svg);
+}
+.service__img.bg3:after {
+    background-image: url(images/icons/growth-white.svg);
+}
+.service__img.bg4:after {
+    background-image: url(images/icons/cogwheels-white.svg);
+}
+
+
+
+
+
+
+.service__title {
+    color: #000;
+    font-weight: 700;
+    font-size:29px;
+    font-family: 'Bebas Neue';
+    line-height:120%;
+    text-align:left;
+    text-transform:uppercase;
+    margin-bottom: 35px;
+}
+.service__item:hover .service__title {
+    color: #fff;
+}
+.service__comb {
+    padding: 0;
+    margin: 0;
+}
+.service__comb li {
+    font-size: 14px;
+    color: #5c5b59;
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+.service__item:hover .service__comb li {
+    color: #fff;
+}
+.service__comb li:last-child {
+    margin-bottom: 0;
+}
+
+/* Cтраница услуг END */
+
+
+
+
 
 
 
