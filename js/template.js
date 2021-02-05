@@ -75,7 +75,7 @@ jQuery(function($){
 
 	$('.xs_hash').click(function(event)
 	{
-		var height = parseInt(Math.round($($(this).attr('href')).offset().top)) - parseInt($('header').height())
+		var height = parseInt(Math.round($($(this).attr('href')).offset().top)) - parseInt($('.pick-menu').height())
 		
 		$('html, body').stop().animate({
 			scrollTop: height
@@ -271,13 +271,13 @@ jQuery(function($){
 
 
 	// Скорол поэкранно
-	/*if($('#fullpage').lenght)
-	{*/
+	if($('#fullpage').lenght)
+	{
 		$('#fullpage').fullpage({
 			sectionSelector: '.page',
 			scrollOverflow: true
 		});
-	/*}*/
+	}
 
 	// Страница Портфолио плагин Isotop 
 
