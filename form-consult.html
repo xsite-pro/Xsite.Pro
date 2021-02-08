@@ -14,7 +14,7 @@
 
 <!-- Хедер START -->
 <header>
-	<div class="pick-menu portfolio-page">
+	<div class="pick-menu">
 		<div class="pick-menu__top">
 			<div class="container_max xs_flex xs_middle">
 				<a href="#" class="logo">
@@ -36,19 +36,6 @@
 				<div class="menu-trigger xs_flex xs_middle">
 					<div class="menu-trigger__name">Меню</div>
 					<div class="menu-trigger__icon"><span></span></div>
-				</div>
-			</div>
-		</div>
-		<div class="portfolio-nav">
-			<div class="container min-dist">
-				<div class="portfolio-nav__inner">
-					<ul class="xs_flex xs_middle xs_start">
-						<li class="portfolio-nav__item active" data-filter="*">Все проекты</li>
-						<li class="portfolio-nav__item" data-filter=".online-store">Интернет-магазины</li>
-						<li class="portfolio-nav__item" data-filter=".corporate-websites">Корпоративные сайты</li>
-						<li class="portfolio-nav__item" data-filter=".landing-pages">Landing Pages</li>
-						<li class="portfolio-nav__item" data-filter=".crm-systems">CRM - системы</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -94,94 +81,45 @@
 </header>
 <!-- Хедер END -->
 
-<!-- Страница портфолио START -->
-<div class="common-page">
-	<div class="portfolio">
+<!-- Форма консультации START -->
+<div class="consult">
+	<div class="container empty">
+		<div class="contact-list xs_flex xs_column xs_center">
+			<div class="xs_flex">
+				<nav class="contact-list__side">
+					<div class="title title-middle consult-title">КОнсультация</div>
+					<div class="consult-subtitle">Задайте Ваш вопрос или просто оставьте телефон, чтобы получить консультацию по интересующему вопросу.</div>
+					<div class="consult-wr_mail">
+						<a class="consult-mail" href="mailto:info@xsite.pro">info@xsite.pro</a>
+					</div>
+					<a class="consult-phone" href="tel:+78314148182">+7 831 414-81-82</a>
+				</nav>
+				<div class="contact-list__side">
+					<form class="consult-form" action="">
+						<input class="consult-form__input consult-form__face" type="text" name="xs_name" placeholder="Контактное лицо">
+						<div class="consult-form__fusion xs_flex xs_middle">
+							<input class="consult-form__input consult-form__phone" type="text" name="xs_phone" placeholder="+7 (___) ___-__-__">
+							<input class="consult-form__input consult-form__mail" type="text" name="xs_mail" placeholder="Email">
+						</div>
+						<input class="consult-form__input consult-form__comment" type="text" name="face" placeholder="Комментарий">
+						<div class="consult-form__agreement">
+							Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <a class="consult-form__politic" href="#">политикой конфиденциальности</a>
+						</div>
+						<input class="consult-form__send btn" type="submit" name="Отправить" value="Отправить">
 
-		<div class="portfolio-list">
-			<a class="portfolio__item corporate-websites crm-systems" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-1.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Корпортивный сайт  -  CRM-система</span>
-						<span class="portfolio__title">Ситема бронирования туров</span>
-					</span>
-				    <div class="mask mask-1"></div>
-				    <div class="mask mask-2"></div>
-			   </span>
-			</a>
-			<a class="portfolio__item landing-pages" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-2.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Landing page</span>
-						<span class="portfolio__title">Строительство бань</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item online-store" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-3.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Интернет-магазин</span>
-						<span class="portfolio__title">грили WEber</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item landing-pages" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-4.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Landing page</span>
-						<span class="portfolio__title">Стоматологическая клиника</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item corporate-websites" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-5.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Корпоративный сайт</span>
-						<span class="portfolio__title">Уникальные каркасные дома</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item landing-pages" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-6.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Landing page</span>
-						<span class="portfolio__title">Продажа земельных участков</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item online-store" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-7.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">Интернет-магазин</span>
-						<span class="portfolio__title">Магазин парфюмерии</span>
-					</span>
-				</span>
-			</a>
-			<a class="portfolio__item crm-systems" href="#">
-				<span class="portfolio__item-inside">
-					<img class="portfolio__img" src="images/pics/project-8.jpg" alt="">
-					<span class="portfolio__text">
-						<span class="portfolio__project">CRM - система</span>
-						<span class="portfolio__title">Строительство бань</span>
-					</span>
-				</span>
-			</a>
+						<input type="hidden" name="send_it" value="y" />
+						<input type="hidden" name="xs_theme" value="" />
+						<input type="hidden" name="xs_link" value="" />
+					</form>
+				</div>
+			</div>
 		</div>
-
 	</div>
 </div>
-<!-- Страница портфолио END -->
-
+<!-- Форма консультации END -->
 
 <!-- Футтер START -->
-<footer>
+<footer class="page">
 	<div class="footer">
 		<div class="container empty">
 			<div class="footer__inner contact-list xs_flex xs_column xs_center">
@@ -237,8 +175,8 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.inputmask.js"></script>
-	<script src="js/isotope-docs.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.isotope-docs.min.js"></script>
 	<script src="js/template.js"></script>
 </body>
 </html>

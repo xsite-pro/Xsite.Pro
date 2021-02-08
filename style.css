@@ -41,14 +41,26 @@ input[type="tel"],
 input[type="password"],
 input[type="email"],
 textarea{
-    color: #c4c2bf;
+    color: #000;
     border: none;
     border-bottom: 1px solid #ebebeb;
     font-family: inherit;
     font-size: 14px;
-    padding: 15px 20px;
+    padding: 14px 0px;
     width: 100%;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: none;
+    line-height: 150%;
+    font-weight: 600;
+    opacity: 0.5;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea{
+    opacity: 1;
+    color: #000;
 }
 button,
 input,
@@ -1708,10 +1720,49 @@ body.menu-appear .drop-menu {
     margin-bottom: 30px;
 }
 .brief__list {
+    margin-bottom: 45px;
+}
+.brief__list.first {
+    margin-bottom: 15px;
 }
 .brief__list-item {
+    position: relative;
+    margin-bottom: 15px;
+}
+.brief__list-item input {
+    position:absolute;
+    opacity:0;
+    z-index: 1;
+}
+.brief__list-item label {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: #000;
+    padding: 15px 21px;
+    cursor: pointer;
+    transition: .2s all;
+    background-color: #ededed;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    margin-right: 20px;
 }
 
+.brief__list-item input[type=checkbox] + label:before,
+.brief__list-item input[type=checkbox] + label:after {
+    display: none;
+}
+
+.brief__list-item label:hover,
+input[type=radio]:checked + label,
+input[type=checkbox]:checked + label {
+    color: #ff8e48;
+    background: none;
+    border: 1px solid #ff8e48;
+}
+.brief__list-item:last-child label {
+    margin-right: 0;
+}
 
 .brief__send-line {
 }
@@ -1779,7 +1830,153 @@ body.menu-appear .drop-menu {
 .brief__send-top:hover:after {
     opacity: 1;
 }
+
+
+.brief__connect {}
+.brief__connect-wrap1 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+input.brief__connect-face {
+    width: 45.5%;
+}
+input.brief__connect-company {
+    width: 45.5%;
+}
+
+.brief__connect-wrap2 {
+    width: 45.5%;
+}
+input.brief__connect-phone {
+    width: 48%;
+}
+input.brief__connect-mail {
+    width: 48%;
+}
+
 /* Страница - Бриф END */
+
+
+
+/* Форма консультации START */
+.consult {
+}
+.container {
+}
+.contact-list {
+}
+.contact-list__side {
+}
+.consult-title {
+    margin-bottom: 35px;
+}
+.consult-subtitle {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    line-height: 150%;
+    max-width: 445px;
+    margin-bottom: 110px;
+}
+.consult-wr_mail {}
+.consult-mail {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    transform: scale(1,1);
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+.consult-phone {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    transform: scale(1,1);
+    line-height: 100%;
+}
+.consult-form {
+}
+.consult-form__input {
+}
+.consult-form__face {
+    margin-bottom: 60px;
+}
+.consult-form__fusion {
+    margin-bottom: 60px;
+}
+input.consult-form__phone {
+    width: 48%;
+}
+input.consult-form__mail {
+    width: 48%;
+}
+.consult-form__comment {
+    margin-bottom: 25px;
+}
+.consult-form__agreement {
+    margin-bottom: 25px;
+    max-width: 435px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.consult-form__politic {
+}
+.consult-form__send {
+    padding: 20px 54px;
+}
+
+
+.brief__list .input_upload {
+    font-size: 14px;
+    color: #ff8e48;
+    font-weight: 600;
+}
+.brief__list .input_upload .fl-attach {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+}
+
+.brief__list .xs_attach_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.brief__list .xs_attach_btn:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 18px;
+    background-image: url(images/icons/file.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.brief__list .xs_attach_btn .attach-inner {}
+.brief__list .xs_attach_btn .attach-inner .icon {}
+.brief__list .xs_attach_btn .attach-inner .text {}
+
+
+/* Форма консультации END */
+
+
+
+
 
 
 
