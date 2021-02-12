@@ -81,114 +81,53 @@
 	</header>
 	<!-- Хедер END -->
 
-	<!-- Страница как добраться START -->
+	<!-- Страница Отзывов START -->
 	<div class="common-page extand">
-		<div class="map-page">
+		<div class="reviews">
 			<div class="wr-bread-nav">
 				<div class="container min-dist">
 					<div class="bread-nav xs_flex xs_middle">
+						<a class="bread-nav__link" href="#">Услуги</a>
 						<a class="bread-nav__link" href="#">Контакты</a>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="map-page__inner">
-					<div class="map-page__achivement xs_flex xs_middle">
-						<div class="title title-middle map-page__achivement-title">Как добраться</div>
-						<div class="map-page__achivement-links">
-							<a class="map-page__achivement-go" href="#">Проложить</a>
-							<a class="map-page__achivement-go map-page__achivement-full" href="#">маршрут до места?</a>
+			<div class="container empty">
+				<div class="reviews__inner xs_flex">
+					<div class="reviews__box reviews__leftbox xs_flex xs_column">
+						<div class="reviews__leftbox-cover">
+							<div class="title title-max reviews__leftbox-title">наши клиенты</div>
+							<div class="reviews__leftbox-text"><p>Работаем с xsite.pro уже не в первый раз. Ребята сделали нам несколько сайтов для наших проектов. Всегда очень четко понимают и реализуют поставленные задачи, оперативно выполняют работы, разговаривают на одном языке с заказчиком. Всегда понятно и быстро отвечают на возникающие вопросы, даже после сдачи проекта. Я довольна качеством и ценой на все 100%. Спасибо!!! Рекомендую всем, кому нужен качественный сайт, оперативность и вежливое обращение.</p></div>
+						</div>
+
+						<div class="reviews__rate">
+							<div class="reviews__rate-title">Общая оценка:</div>
 						</div>
 					</div>
-					<div class="map-page__body">
+					<div class="reviews__box reviews__rightbox">
+						<div class="reviews__rightbox-avatar">
+							<img class="reviews__rightbox-avatar__img" src="images/pics/autor-1.png">
+						</div>
+						<div class="reviews__ladder">
+							<div class="reviews__ladder-business">Основатель клуба "Бизнесмания"</div>
+							<div class="title reviews__ladder-title">Котова Екатерина</div>
 
-						<div id="xs_map"></div>
-					    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.clusters&lang=ru-RU" type="text/javascript"></script>
-					    <script type="text/javascript">
-					        ymaps.ready(init);
-					        function init(){
-					            myMap = new ymaps.Map ("xs_map", {
-					                center: [56.315226, 43.910506],
-					                zoom: 13,
-					                controls: ['searchControl', 'typeSelector',  'fullscreenControl'],
-					            }, {
-					                searchControlProvider: 'yandex#search'
-					            });
-					                            
-					            var myPlacemark = [];
-					            
-					            var clusterer = new ymaps.Clusterer({
-					                groupByCoordinates: false,
-					                clusterDisableClickZoom: false
-					            });
-					            
-                                        myPlacemark[0] = new ymaps.Placemark(
-					                        [56.315226, 43.950506],
-					                        {
-					                            balloonContent: '<div style="width:220px;font-size:14px; padding:0 10px 15px 10px; color:#000 "><div style="margin:0 0 8px; font-size:115%;"><strong>Центральный офис</strong></div><div style="margin:0 0 8px;">г. Нижний Новгород, ул. Комунистическая 77, оф. 208</div><div style="margin:0 0 8px;"><a href="tel:+78314148182" style="color: #ff8e48; ">8 (831) 414 81 82</a></div><div style="margin:0;"><a href="mailto:info@xsite.pro" style="color: #ff8e48;">info@xsite.pro</a></div></div>',
-					                            open:true
-					                        },
-					                        {
-					                            iconLayout: 'default#image',
-					                            iconImageHref: 'images/pics/placemark.png',
-					                            iconImageSize: [41, 60],
-					                            iconImageOffset: [-22, -56],
-					                        }
-					                    );
-					                                                            
-					            clusterer.add(myPlacemark);
-					            myMap.controls.add(new ymaps.control.ZoomControl( { position: { left: 20, bottom: 55 }}));
-					            
-					            myMap.geoObjects.add(clusterer);
-					            
-					            jQuery('.map_link').click(function(){
-
-					                var id = jQuery(this).data('id'),
-					                    objectState = clusterer.getObjectState(myPlacemark[id]),
-					                    x = myPlacemark[id].geometry.getCoordinates()[0],
-					                    y = myPlacemark[id].geometry.getCoordinates()[1] - 0.02
-					                    
-					                if(parseInt(jQuery(window).width()) < 950)
-					                {
-					                    y = myPlacemark[id].geometry.getCoordinates()[1]
-					                }
-					                
-					                if (objectState.isClustered) {
-					                    myMap.setCenter([x, y], 14, {duration: 300})
-					                    setTimeout(function(){
-					                        myPlacemark[id].balloon.open();
-					                    }, 1800)
-					                } else if (objectState.isShown) {
-					                    myMap.setCenter([x, y], 14, {duration: 300})
-					                    setTimeout(function(){
-					                        myPlacemark[id].balloon.open();
-					                    }, 400)
-					                } else {
-					                    myMap.setCenter([x, y], 14, {duration: 300})
-					                    setTimeout(function(){
-					                        myPlacemark[id].balloon.open();
-					                    }, 1500)
-					                }
-					                if(parseInt(jQuery(window).width()) < 950)
-					                {
-					                    var mapTop = jQuery('#xs_map').offset(),
-					                        height = parseInt(Math.round(mapTop.top))
-					                        
-					                    jQuery('html, body').stop().animate({
-					                        scrollTop: height
-					                    }, 300, "linear")
-
-					                }
-					            });
-
-					        }
-					    </script>
+							<div class="reviews__steps">
+								<div class="reviews__steps-item step-1">Алексей Белоусов</div>
+								<div class="reviews__steps-item step-2">Евгений Иванов</div>
+								<div class="reviews__steps-item step-3">Никита Лазарев</div>
+							</div>
+						</div>
+						<div class="reviews__clicker xs_flex xs_middle xs_start">
+							<a class="reviews__clicker-link" href="#">Посмотреть сайт</a>
+							<a class="reviews__clicker-link" href="#">Написать свой отзыв</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Страница как добраться END -->
+	<!-- Страница Отзывов END -->
 
 	<!-- Футтер START -->
 	<footer class="page">

@@ -2444,10 +2444,88 @@ input.consult-form__mail {
 /* Страница как добраться END */
 
 
+/* Страница Отзывов START */
 
+.reviews__inner {
+}
+.reviews__box {
+    width: 50%;
+    padding: 0 60px;
+}
+.reviews__leftbox {
+}
+.reviews__leftbox-cover {}
+.reviews__leftbox-title {
+    margin-bottom: 100px;
+}
+.reviews__leftbox-text {}
+.reviews__leftbox-text p {
+    font-size: 14px;
+    color: #5c5b59;
+    max-width: 500px;
+    margin: 0 0 15px;
+    line-height: 170%;
+}
+.reviews__rate {
+}
+.reviews__rate-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.reviews__rightbox {
+}
+.reviews__rightbox-avatar {
+    margin-bottom: 100px;
+}
+.reviews__rightbox-avatar__img {
+}
+.reviews__ladder {
+    margin-bottom: 70px;
+}
+.reviews__ladder-business {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.reviews__ladder-title {
+    margin-bottom: 40px;
+}
+.reviews__steps {
+}
+.reviews__steps-item {
+    color: #000;
+    font-family: 'Bebas Neue';
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.reviews__steps-item.step-1 {
+    font-size: 24px;
+    opacity: 0.5;
+}
+.reviews__steps-item.step-2 {
+    font-size: 20px;
+    opacity: 0.4;
+}
+.reviews__steps-item.step-3 {
+    font-size: 16px;
+    opacity: 0.3;
+}
+.reviews__steps-item:last-child {
+    margin-bottom: 0;
+}
+.reviews__clicker {
+}
+.reviews__clicker-link {
+    margin-right: 105px;
+}
+.reviews__clicker-link:last-child {
+    margin-right: 0;
+}
 
-
-
+/* Страница Отзывов END */
 
 
 
