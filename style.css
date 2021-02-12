@@ -2053,14 +2053,24 @@ input.consult-form__mail {
     width: 50%;
     padding: 0 60px;
 }
+.agency__side-labels {
+    padding-top: 25px;
+}
 .agency__side-title {
     max-width: 315px;
     margin-bottom: 100px;
 }
 .agency__side-subtitle {
     padding-left: 60px;
-    line-height: 200%;
+    line-height: 230%;
     max-width: 550px;
+}
+.agency__side-subtitle a {
+    position: relative;
+    border-bottom: 1px solid #fd8e4838;
+}
+.agency__side-subtitle a:hover {
+    border-bottom: 1px solid transparent;
 }
 .agency__side-item {
     width: 50%;
@@ -2122,7 +2132,7 @@ input.consult-form__mail {
 .service-company:hover .service__img:before {opacity: 1;}
 .service-company:hover .service__img:after {opacity: 0;}
 .service-company .service__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .service-company:hover .service__title {
     color: #000;
@@ -2226,7 +2236,7 @@ input.consult-form__mail {
 
 .workspace {}
 .workspace--space {
-    padding: 90px 0 40px;
+    padding: 90px 0 70px;
 }
 .workspace__inner {
 }
@@ -2321,19 +2331,55 @@ input.consult-form__mail {
     line-height: 220%;
     margin: 0 0 24px;
 }
-
-
-
-
-
-
-
-
-
-
 /* Страница о компании END */
 
 
+
+
+
+
+/* Страница как добраться START */
+
+.map-page {}
+.wr-bread-nav {}
+.bread-nav {}
+.bread-nav__link {}
+.map-page__inner {}
+.map-page__achivement {
+    margin-bottom: 45px;
+}
+.map-page__achivement-title {}
+.map-page__achivement-links {}
+.map-page__achivement-go {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid hsl(0deg 0% 0% / 19%);
+    line-height: 100%;
+    margin-bottom: 14px;
+}
+.map-page__achivement-go:hover {
+    color: #ff8e48;
+    border-bottom: 1px solid transparent;
+}
+.map-page__achivement-go:last-child {
+    margin-bottom: 0;
+}
+.map-page__achivement-full {
+    display: block;
+}
+.map-page__body {}
+
+#xs_map {
+    width: 100%;
+    height: 440px;
+}
+
+/* Страница как добраться END */
 
 
 
