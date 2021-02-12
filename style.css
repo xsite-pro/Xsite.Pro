@@ -813,7 +813,10 @@ body.menu-appear .drop-menu {
     display: block;
 }
 
-
+.vertical {
+    height: 100vh;
+    min-height: 800px;
+}
 
 
 
@@ -1440,6 +1443,9 @@ body.menu-appear .drop-menu {
     display: block;
     position: relative;
     overflow: hidden;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
 }
 .portfolio__item:before {
     content:"";
@@ -1569,6 +1575,7 @@ body.menu-appear .drop-menu {
 }
 .service__inner {
 }
+.company-screen {}
 .wr-bread-nav {
     margin-bottom: 45px;
 }
@@ -1863,10 +1870,6 @@ input.brief__connect-mail {
 }
 .container {
 }
-.contact-list {
-}
-.contact-list__side {
-}
 .consult-title {
     margin-bottom: 35px;
 }
@@ -1973,6 +1976,250 @@ input.consult-form__mail {
 
 
 /* Форма консультации END */
+
+
+/* Страница проекта START */
+.project {}
+.project-dist {
+    padding-top: 30px;
+}
+.project-inn {
+}
+.project__list-pic {
+    padding: 0;
+    position: relative;
+}
+.project__list-pic__wrap {
+    width: 128.195%;
+    margin-left: -31%;
+}
+.project__list-pic__wrap-img {
+    width: 100%;
+}
+.project__list-info {
+}
+.project__list-title {
+    margin: 0 0 80px;
+}
+.project__list-tegs {
+    margin: 0 0 30px;
+}
+.project__list-tegs__item {
+    font-size: 14px;
+    color: #c5c5c5;
+    font-weight: 300;
+    border: 1px solid #eaeaea;
+    border-radius: 25px;
+    padding: 2px 16px;
+    margin: 0 6px 6px 0;
+}
+.project__list-text {
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    margin: 0 0 115px;
+    line-height: 170%;
+}
+.project__list-clickers {
+}
+.project__list-clickers__btn {
+    margin-right: 45px;
+}
+.project__list-clickers__watch {
+    font-size: 14px;
+    color: #ff8e48;
+}
+
+/* Страница проекта END */
+
+
+
+
+
+
+/* Страница о компании START */
+.company {
+}
+.agency {
+}
+.agency__side {
+    width: 50%;
+    padding: 0 60px;
+}
+.agency__side-title {
+    max-width: 315px;
+    margin-bottom: 100px;
+}
+.agency__side-subtitle {
+    padding-left: 60px;
+    line-height: 200%;
+    max-width: 550px;
+}
+.agency__side-item {
+    width: 50%;
+    margin-bottom: 90px;
+}
+.agency__side-item__icon {
+    width: 66px;
+    height: 62px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    font-weight: 700;
+    color: #1f1f1f;
+    text-align: center;
+    position: relative;
+    background-image: url(images/icons/awardl.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 66px;
+    margin-bottom: 35px;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.agency__side-item__title {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 600;
+    color: #000000;
+    max-width: 180px;
+}
+
+
+.service-company {
+    margin-bottom: 190px;
+}
+
+.service-company .service__item {
+    padding: 50px 60px 25px;
+}
+.service-company .service__item:hover {
+    background-color: #fff;
+}
+.service-company:hover .service__img:before {opacity: 1;}
+.service-company:hover .service__img:after {opacity: 0;}
+.service-company .service__title {
+    margin-bottom: 20px;
+}
+.service-company:hover .service__title {
+    color: #000;
+}
+.service__more {
+    font-size: 12px;
+    color: #ff7400;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    transition: .2s all;
+} 
+.service__more:hover {
+    color: #ff7400;
+}
+
+
+
+.profitable {
+}
+.profitable__title {
+    max-width: 370px;
+    margin-bottom: 110px;
+}
+.profitable__inner {
+}
+.profitable__item {
+    width: 25%;
+    margin-bottom: 80px;
+    padding-right: 60px;
+}
+.profitable__item-img {
+    width: 34px;
+    height: 34px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 34px;
+    margin-bottom: 25px;
+}
+.profitable__item-img.bg-1 {
+    background-image: url(images/icons/website.svg);
+}
+.profitable__item-img.bg-2 {
+    background-image: url(images/icons/database.svg);
+}
+.profitable__item-img.bg-3 {
+    background-image: url(images/icons/computing-cloud.svg);
+}
+.profitable__item-img.bg-4 {
+    background-image: url(images/icons/monitor.svg);
+}
+.profitable__item-img.bg-5 {
+    background-image: url(images/icons/world.svg);
+}
+.profitable__item-img.bg-6 {
+    background-image: url(images/icons/web-programming.svg);
+}
+.profitable__item-img.bg-7 {
+    background-image: url(images/icons/open-magazine.svg);
+}
+.profitable__item-img.bg-8 {
+    background-image: url(images/icons/stopwatch.svg);
+}
+.profitable__item-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5c5b59;
+}
+
+
+
+
+.banner {
+}
+.banner-one {
+}
+.banner__inner {
+    position: relative;
+    z-index: 1;
+}
+.banner__img {
+}
+.banner__wr-text {
+}
+.banner__title {
+    position: absolute;
+    z-index: 2;
+    left: 60px;
+    right: 60px;
+    bottom: 100px;
+    max-width: 600px;
+}
+
+
+
+
+/* Страница о компании END */
+
+
+
+
+
+
+
 
 
 
