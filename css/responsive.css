@@ -3,11 +3,52 @@
 	    width: 100%;
 	    margin-left: -4%;
 	}
+	/*.case__img-tablet {
+	    max-width: 400px;
+	}
+	.case__img-phone1 {
+	    max-width: 300px;
+	}
+	.case__img-phone2 {
+	    max-width: 200px;
+	}
+	.case__img-pen {
+	    max-width: 250px;
+	}
+
+	.slick-current .case__img-tablet {
+	    top: 23%;
+	    right: 20%;
+	}
+	.slick-current .case__img-phone1 {
+	    right: 1%;
+	    bottom: 21%;
+	}
+	.slick-current .case__img-phone2 {
+	    top: 12%;
+	    right: 12%;
+	}
+	.slick-current .case__img-pen {
+	    top: 47%;
+	    right: 14%;
+	}*/
 }
 
 @media screen and (max-width:1500px){
 	.project__list-pic__wrap {
 	    margin-left: 0%;
+	}
+
+}
+
+@media screen and (max-width:1350px){
+	.banner__title {
+	    font-size: 50px;
+	}
+	.banner__wr-text {
+	    left: 0;
+	    right: 0;
+	    bottom: 12%;
 	}
 }
 

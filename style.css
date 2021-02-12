@@ -812,10 +812,12 @@ nav {}
 body.menu-appear .drop-menu {
     display: block;
 }
-
 .vertical {
     height: 100vh;
     min-height: 800px;
+}
+.ht-distance {
+    padding: 90px 0;
 }
 
 
@@ -845,24 +847,29 @@ body.menu-appear .drop-menu {
     position: absolute;
     z-index: 3;
     left: auto;
-    transition: 1.2s all;
+    opacity: 0;
+    transition: 0.6s all;
 }
 
 .case__img-tablet {
-    top: 100%;
-    right: 20%;
+    top: 80%;
+    right: 10%;
+    opacity: 1;
 }
 .case__img-phone1 {
-    right: -50%;
-    bottom: 12%;
+    right: -20%;
+    bottom: 6%;
+    opacity: 1;
 }
 .case__img-phone2 {
-    top: -70%;
-    right: 12%;
+    top: -30%;
+    right: 6%;
+    opacity: 1;
 }
 .case__img-pen {
-    top: 100%;
-    right: -20%;
+    top: 80%;
+    right: -10%;
+    opacity: 1;
 }
 
 .slick-current .case__img-tablet {
@@ -2134,7 +2141,9 @@ input.consult-form__mail {
 
 
 
-.profitable {
+.profitable {}
+.profitable--company {
+    margin-bottom: 250px;
 }
 .profitable__title {
     max-width: 370px;
@@ -2186,11 +2195,12 @@ input.consult-form__mail {
 }
 
 
-
-
 .banner {
+    margin-bottom: 90px;
 }
-.banner-one {
+.banner-one {}
+.banner-two {
+    margin-bottom: 0;
 }
 .banner__inner {
     position: relative;
@@ -2199,15 +2209,124 @@ input.consult-form__mail {
 .banner__img {
 }
 .banner__wr-text {
-}
-.banner__title {
     position: absolute;
     z-index: 2;
     left: 60px;
     right: 60px;
-    bottom: 100px;
+    bottom: 20%;
+}
+.banner__title {
     max-width: 600px;
 }
+.banner-two .banner__title {
+    max-width: 325px;
+}
+
+
+
+.workspace {}
+.workspace--space {
+    padding: 90px 0 40px;
+}
+.workspace__inner {
+}
+.workspace__cover {
+    width: 50%;
+    margin-bottom: 75px;
+}
+.workspace__cover-item {
+    width: 50%;
+}
+.workspace__cover--img {
+    margin-top: -65px;
+}
+.workspace__cover-item__title {
+    max-width: 250px;
+}
+.workspace__cover-item__img {}
+.workspace__item {
+    width: 25%;
+    max-width: 250px;
+    margin-bottom: 75px;
+}
+.workspace__item-title {
+    margin-bottom: 30px;
+}
+.workspace__item-title__numb {
+    width: 30px;
+    font-size: 30px;
+    color: #ff7400;
+    border-bottom: 3px solid #ff7400;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Bebas Neue';
+    line-height:120%;
+    text-transform:uppercase;
+    margin-right: 13px;
+}
+.workspace__item-title__text {
+    font-size: 30px;
+
+    font-weight: 700;
+    font-family: 'Bebas Neue';
+    line-height:120%;
+    text-align:left;
+    text-transform:uppercase;
+}
+.workspace__item-text {
+    font-size: 14px;
+    color: #5c5b59;
+}
+.workspace__item-text__link {
+    display: inline-block;
+    vertical-align: middle;
+    color: #5c5b59;
+    position: relative;
+    z-index: 1;
+    line-height: 120%;
+    border-bottom: 1px solid #d6d6d5;
+}
+.workspace__item-text__link:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.person-offer {}
+.person-offer__title {
+    font-size: 50px;
+    max-width: 500px;
+    margin-bottom: 140px;
+}
+
+
+.company-description {
+    margin: 0 0 100px;
+}
+.company-description__inner {
+}
+.company-description__title {
+    font-size: 30px;
+    margin-bottom: 55px;
+}
+.company-description__text {
+    -moz-column-count: 2; 
+    -webkit-column-count: 2; 
+    column-count: 2; 
+    -webkit-column-gap: 9%; 
+    -moz-column-gap: 9%; 
+    column-gap: 9%;
+}
+.company-description__text p {
+    font-size: 12px;
+    color: #5c5b59;
+    line-height: 220%;
+    margin: 0 0 24px;
+}
+
+
+
+
+
+
 
 
 
