@@ -82,33 +82,18 @@
 	<!-- Хедер END -->
 
 	<!-- Страница как добраться START -->
-	<div class="common-page extand">
-		<div class="map-page">
-			<div class="wr-bread-nav">
-				<div class="container min-dist">
-					<div class="bread-nav xs_flex xs_middle">
-						<a class="bread-nav__link" href="#">Контакты</a>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="map-page__inner">
-					<div class="map-page__achivement xs_flex xs_middle">
-						<div class="title title-middle map-page__achivement-title">Как добраться</div>
-						<div class="map-page__achivement-links">
-							<a class="map-page__achivement-go" href="#">Проложить</a>
-							<a class="map-page__achivement-go map-page__achivement-full" href="#">маршрут до места?</a>
-						</div>
-					</div>
-					<div class="map-page__body">
-
-						<div id="xs_map"></div>
+	<div class="contacts">
+		<div class="container empty">
+			<div class="contacts__inner contact-list xs_flex xs_column xs_center">
+				<div class="contacts__inner-inn xs_flex">
+					<div class="contact-list__side">
+						<div id="xs_map-contacts"></div>
 					    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.clusters&lang=ru-RU" type="text/javascript"></script>
 					    <script type="text/javascript">
 					        ymaps.ready(init);
 					        function init(){
-					            myMap = new ymaps.Map ("xs_map", {
-					                center: [56.315226, 43.910506],
+					            myMap = new ymaps.Map ("xs_map-contacts", {
+					                center: [56.315226, 43.930506],
 					                zoom: 13,
 					                controls: ['searchControl', 'typeSelector',  'fullscreenControl'],
 					            }, {
@@ -171,7 +156,7 @@
 					                }
 					                if(parseInt(jQuery(window).width()) < 950)
 					                {
-					                    var mapTop = jQuery('#xs_map').offset(),
+					                    var mapTop = jQuery('#xs_map-contacts').offset(),
 					                        height = parseInt(Math.round(mapTop.top))
 					                        
 					                    jQuery('html, body').stop().animate({
@@ -183,6 +168,34 @@
 
 					        }
 					    </script>
+					</div>
+					<div class="contact-list__side contact-list__side--contacts">
+						<div class="wr-bread-nav contacts__bread-nav">
+							<div class="bread-nav xs_flex xs_middle">
+								<a class="bread-nav__link" href="#">Контакты</a>
+							</div>
+						</div>
+						<div class="title contact-list__side-atitle contacts__list-title">Всё расскажем и покажем</div>
+						<div class="contact-list__side-wraddress">
+							<div class="contact-list__side-write">Нижний Новгород</div>
+							<div class="contact-list__side-where">Коммунистическая 77 офис 208</div>
+						</div>
+						<div class="contact-list__side-wrphone">
+							<div class="contact-list__side-call">Звоните</div>
+							<a class="contact-list__side-phone contact-list__side-phone-another" href="tel:+78314148182">+7 831 414-81-82</a>
+						</div>
+						<div class="contact-list__side-wrmail">
+							<div class="contact-list__side-write">Пишите</div>
+							<a class="contact-list__side-mail contact-list__side-mail--contacts" href="mailto:info@xsite.pro">info@xsite.pro</a>
+						</div>
+						<div class="contact-list__side-wrlinks xs_flex xs_middle xs_start">
+							<a class="contact-list__side-popup contact-list__side-popup--another btn" href="file:///C:/Users/XSite.PRO/Desktop/GitHub/Xsite.Pro/form-consult.html">Консультация</a>
+							<a class="contacts-list__brif-another" href="file:///C:/Users/XSite.PRO/Desktop/GitHub/Xsite.Pro/brief.html">Заполнить бриф</a>
+						</div>
+						<div class="contacts-list__side-social social">
+							<a class="contacts-social__item" href="https://vk.com/xsitepro" target="_blank">vkontakte</a>
+							<a class="contacts-social__item" href="https://www.instagram.com/xsite.pro/" target="_blank">instagram</a>
+						</div>
 					</div>
 				</div>
 			</div>

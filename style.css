@@ -1132,6 +1132,10 @@ body.menu-appear .drop-menu {
     width: 50%;
     padding: 0 60px;
 }
+.contact-list__side--contacts {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
 
 .gen_menu {}
 .gen_menu li {
@@ -1157,6 +1161,9 @@ body.menu-appear .drop-menu {
 .contact-list__side-atitle {
     max-width: 330px;
     margin-bottom: 60px;
+}
+.contacts__list-title {
+    max-width: 100%;
 }
 .footer__locate-title {
 }
@@ -1226,7 +1233,7 @@ body.menu-appear .drop-menu {
     background-color: #ff8e48;
 }
 .contact-list__side-wrphone {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 .contact-list__side-call {
     font-size: 14px;
@@ -1241,6 +1248,21 @@ body.menu-appear .drop-menu {
     line-height:120%;
     text-align:left;
     text-transform:uppercase;
+}
+.contact-list__side-phone-another {
+    color: #ff8e48;
+}
+.contact-list__side-phone-another:hover {
+    color: #000;
+}
+.contact-list__side-wraddress {
+    margin-bottom: 30px;
+}
+.contact-list__side-write {}
+.contact-list__side-where {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
 }
 .contact-list__side-wrmail {
     margin-bottom: 50px;
@@ -1258,16 +1280,35 @@ body.menu-appear .drop-menu {
     transform: scale(1,1.1);
     letter-spacing: 0.05em;
 }
+.contact-list__side-mail--contacts {
+    transform: scale(1,1);
+}
 .contact-list__side-wrlinks {
     margin-bottom: 50px;
 }
 .contact-list__side-popup {
     margin-right: 68px;
 }
+.contact-list__side-popup--another {
+    padding: 19px 73px;
+    text-transform: initial;
+    margin-right: 50px;
+    font-size: 14px;
+}
 .contact-list__side-brif {
     padding-left: 50px;
     max-width: 250px;
     position: relative;
+}
+.contacts-list__brif-another {
+    color: #101010;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    border-bottom: 1px solid #00000038;
+}
+.contacts-list__brif-another:hover {
+    border-bottom: 1px solid transparent;
 }
 .contact-list__side-brif:before {
     content:"";
@@ -1300,10 +1341,23 @@ body.menu-appear .drop-menu {
     color: #7c7c7c;
     line-height: 120%;
 }
-.contact-list__side-social {
+.contacts-list__side-social {
 }
-.social {
+.contacts-social__item {
+    display: inline-block;
+    vertical-align: top;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
 }
+.contacts-social__item:hover {
+    color: #ff8e48;
+}
+.contacts-social__item:last-child {
+    margin-right: 0;
+}
+.social {}
 .social__item {
     display: inline-block;
     vertical-align: top;
@@ -1585,6 +1639,9 @@ body.menu-appear .drop-menu {
 .company-screen {}
 .wr-bread-nav {
     margin-bottom: 45px;
+}
+.contacts__bread-nav {
+    margin-left: -60px;
 }
 .bread-nav {}
 .bread-nav__link {
@@ -2377,6 +2434,11 @@ input.consult-form__mail {
 #xs_map {
     width: 100%;
     height: 440px;
+}
+#xs_map-contacts {
+    width: 138%;
+    height: 100%;
+    margin-left: -42%;
 }
 
 /* Страница как добраться END */
