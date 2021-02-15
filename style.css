@@ -1198,6 +1198,7 @@ body.menu-appear .drop-menu {
 
 .footer__locate {}
 .contact-list__side-atitle {
+    margin: 0;
     max-width: 330px;
     margin-bottom: 60px;
 }
@@ -1814,6 +1815,7 @@ body.menu-appear .drop-menu {
     margin-bottom: 240px;
 }
 .brief__title {
+    margin-top: 0;
 }
 .brief__subtitle {
     font-size: 16px;
@@ -1974,6 +1976,7 @@ input.brief__connect-mail {
 .container {
 }
 .consult-title {
+    margin: 0;
     margin-bottom: 35px;
 }
 .consult-subtitle {
@@ -2155,6 +2158,7 @@ input.consult-form__mail {
     padding-top: 25px;
 }
 .agency__side-title {
+    margin: 0;
     max-width: 315px;
     margin-bottom: 100px;
 }
