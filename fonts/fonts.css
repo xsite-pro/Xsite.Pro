@@ -1,42 +1,43 @@
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('ProximaNova-Light.eot');
-	src: url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-	url('ProximaNova-Light.woff') format('woff'),
-	url('ProximaNova-Light.ttf') format('truetype');
+	src: local('ProximaNova-Light'),
+		url('ProximaNova-Light.woff2') format('woff2'),
+		url('ProximaNova-Light.woff') format('woff'),
+		url('ProximaNova-Light.ttf') format('truetype'),
+		url('ProximaNova-Light.eot?#iefix') format('embedded-opentype');
 	font-weight: 300;
 	font-style: normal;
     font-display: swap;
 }
-
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('ProximaNova-Regular.eot');
-	src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-	url('ProximaNova-Regular.woff') format('woff'),
-	url('ProximaNova-Regular.ttf') format('truetype');
+	src: local('ProximaNova-Regular'),
+		url('ProximaNova-Regular.woff2') format('woff2'),
+		url('ProximaNova-Regular.woff') format('woff'),
+		url('ProximaNova-Regular.ttf') format('truetype'),
+		url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
 	font-weight: 400;
 	font-style: normal;
     font-display: swap;
 }
-
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('ProximaNova-Semibold.eot');
-	src: url('ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-	url('ProximaNova-Semibold.woff') format('woff'),
-	url('ProximaNova-Semibold.ttf') format('truetype');
+	src: local('ProximaNova-Semibold'),
+		url('ProximaNova-Semibold.woff2') format('woff2'),
+		url('ProximaNova-Semibold.woff') format('woff'),
+		url('ProximaNova-Semibold.ttf') format('truetype'),
+		url('ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
 	font-weight: 600;
 	font-style: normal;
     font-display: swap;
 }
-
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('ProximaNova-Bold.eot');
-	src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-	url('ProximaNova-Bold.woff') format('woff'),
-	url('ProximaNova-Bold.ttf') format('truetype');
+	src: local('ProximaNova-Bold'),
+		url('ProximaNova-Bold.woff2') format('woff2'),
+		url('ProximaNova-Bold.woff') format('woff'),
+		url('ProximaNova-Bold.ttf') format('truetype'),
+		url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype');
 	font-weight: 700;
 	font-style: normal;
     font-display: swap;
@@ -44,10 +45,11 @@
 
 @font-face {
 	font-family: 'Bebas Neue';
-	src: url('BebasNeueBold.eot');
-	src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
-	url('BebasNeueBold.woff') format('woff'),
-	url('BebasNeueBold.ttf') format('truetype');
+	src: local('Bebas Neue'),
+		url('Bebas Neue.woff2') format('woff2'),
+		url('Bebas Neue.woff') format('woff'),
+		url('Bebas Neue.ttf') format('truetype'),
+		url('Bebas Neue.eot?#iefix') format('embedded-opentype');
 	font-weight: 700;
 	font-style: normal;
     font-display: swap;
@@ -55,10 +57,11 @@
 
 @font-face {
 	font-family: 'Code Pro';
-	src: url('Code-Pro-Bold.eot');
-	src: url('Code-Pro-Bold.eot?#iefix') format('embedded-opentype'),
-	url('Code-Pro-Bold.woff') format('woff'),
-	url('Code-Pro-Bold.ttf') format('truetype');
+	src: local('Code Pro'),
+		url('Code Pro.woff2') format('woff2'),
+		url('Code Pro.woff') format('woff'),
+		url('Code Pro.ttf') format('truetype'),
+		url('Code Pro.eot?#iefix') format('embedded-opentype');
 	font-weight: 700;
 	font-style: normal;
     font-display: swap;
