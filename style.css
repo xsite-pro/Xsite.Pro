@@ -12,7 +12,7 @@ Tags:
 Text Domain: xsite.pro
 */
 
-body, html{
+body, html {
     font-family: Proxima Nova, sans-serif;
     font-size: 14px;
     color:#000000;
@@ -2456,6 +2456,7 @@ input.consult-form__mail {
 }
 .reviews__leftbox-cover {}
 .reviews__leftbox-title {
+    margin: 0;
     margin-bottom: 100px;
 }
 .reviews__leftbox-text {}
@@ -2466,22 +2467,48 @@ input.consult-form__mail {
     margin: 0 0 15px;
     line-height: 170%;
 }
-.reviews__rate {
-}
+.reviews__rate {}
 .reviews__rate-title {
     font-size: 10px;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .reviews__rightbox {
+    padding-top: 20px;
 }
 .reviews__rightbox-avatar {
+    width: 90px;
+    height: 90px;
     margin-bottom: 100px;
+}
+.reviews__rightbox-avatar.icon-2 {
+    position: relative;
+    z-index: 1;
+}
+.reviews__rightbox-avatar.icon-2:before {
+    content: "2";
+    display: block;
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    font-size: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #ff8e48;
+    font-weight: 600;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    z-index: 2;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200%;
 }
 .reviews__rightbox-avatar__img {
 }
 .reviews__ladder {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 .reviews__ladder-business {
     font-size: 14px;
@@ -2499,6 +2526,7 @@ input.consult-form__mail {
     font-family: 'Bebas Neue';
     cursor: pointer;
     text-transform: uppercase;
+    transition: .2s all;
     margin-bottom: 25px;
 }
 .reviews__steps-item.step-1 {
@@ -2513,25 +2541,80 @@ input.consult-form__mail {
     font-size: 16px;
     opacity: 0.3;
 }
+.reviews__steps-item:hover {
+    opacity: 1;
+}
 .reviews__steps-item:last-child {
     margin-bottom: 0;
 }
-.reviews__clicker {
-}
+.reviews__clicker {}
 .reviews__clicker-link {
+    position: relative;
+    font-weight: 600px;
+    padding-left: 19px;
     margin-right: 105px;
 }
 .reviews__clicker-link:last-child {
     margin-right: 0;
 }
+.reviews__clicker-link:before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    box-sizing: border-box;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 11px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.reviews__clicker-link--watch:before {
+    background-image: url(images/icons/link_round.svg);
+}
+.reviews__clicker-link--own:before {
+    background-image: url(images/icons/cloud_message.svg);
+}
+
+.reviews__clicker-link--own {
+    color: #000;
+}
+
+
+.reviews__clicker-link span {
+    line-height: 100%;
+    font-weight: 600;
+    border-bottom: 1px solid #bfbfbf;
+    transition: .2s all;
+}
+.reviews__clicker-link:hover span {
+    border-bottom: 1px solid transparent;
+}
+
+.reviews__clicker-link--watch {}
+.reviews__clicker-link--watch span {
+    border-bottom: 1px solid #ffe3d1;
+}
+.reviews__clicker-link--watch:own span {}
+
+.stars-field__star {
+    width: 32px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: 0;
+}
+.about__star {
+    background-image: url(images/icons/star-empty.svg);
+}
+.about__star.full {
+    background-image: url(images/icons/star-full.svg);
+}
 
 /* Страница Отзывов END */
-
-
-
-
-
-
-
 
 
