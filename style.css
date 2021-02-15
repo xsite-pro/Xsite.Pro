@@ -247,7 +247,7 @@ i{
     transition: all 0.2s;
 }
 .btn-white:hover {
-    color: #ff8e48;
+    color: #000;
     background-color: #fff;
 }
 
@@ -622,6 +622,41 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 }
 
 
+.common-clicker {
+    position: relative;
+    font-weight: 600px;
+    padding-left: 19px;
+}
+.common-clicker span {
+    line-height: 100%;
+    font-weight: 600;
+    border-bottom: 1px solid #ffe3d1;
+    transition: .2s all;
+}
+.common-clicker:hover span {
+    border-bottom: 1px solid transparent;
+}
+.common-clicker:before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    box-sizing: border-box;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 11px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.common-clicker--watch:before {
+    background-image: url(images/icons/link_round.svg);
+}
+
+
 /* Xsite.Pro */
 
 nav {}
@@ -726,7 +761,7 @@ nav {}
     font-size: 10px;
     color: #000;
     width: 45px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative;
     line-height: 100%;
@@ -897,7 +932,7 @@ body.menu-appear .drop-menu {
     height: 100%;
 }
 .case__text {
-    max-width: 680px;
+    max-width: 658px;
     color: #fff;
 }
 .case__text-title {
@@ -938,9 +973,11 @@ body.menu-appear .drop-menu {
 
 
 .style_blue .case__persons-title,
-.style_blue .case__text-info,
-.style_blue .case__persons-name {
+.style_blue .case__text-info {
     color: #6997cf;
+}
+.style_blue .case__persons-name {
+    color: #c8e1ff;
 }
 
 .style_brown .case__persons-title,
@@ -969,7 +1006,7 @@ body.menu-appear .drop-menu {
 .slick-dots li button{
     font-size: 0;
     width: 31px;
-    height: 3px;
+    height: 2px;
     text-indent: 100px;
     overflow: hidden;
     transition: .3s all;
@@ -1007,7 +1044,7 @@ body.menu-appear .drop-menu {
     content: "";
     display: block;
     width: 31px;
-    height: 3px;
+    height: 2px;
     transition: 2s all;
     outline: none;
     background: #fff;
@@ -1098,6 +1135,7 @@ body.menu-appear .drop-menu {
     filter: gray;
     -webkit-filter: grayscale(1);
     transition: .3s all;
+    opacity: 0.2;
 }
 .companies__item.active img,
 .companies__item img:hover {
@@ -1107,6 +1145,7 @@ body.menu-appear .drop-menu {
     -o-filter: grayscale(0%);
     filter: none;
     -webkit-filter: grayscale(0);
+    opacity: 1;
 }
 
 /* Логотипы компаний END */
@@ -1284,7 +1323,7 @@ body.menu-appear .drop-menu {
     transform: scale(1,1);
 }
 .contact-list__side-wrlinks {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .contact-list__side-popup {
     margin-right: 68px;
@@ -1365,7 +1404,7 @@ body.menu-appear .drop-menu {
     height: 36px;
     border: 1px solid #d9d9d9;
     border-radius: 25px;
-    margin-right: 11px;
+    margin-right: 8px;
     transition: .2s all;
     position: relative;
 }
@@ -1409,7 +1448,7 @@ body.menu-appear .drop-menu {
 }
 .social__inst:before {
     background-image: url(images/icons/instagram-gray.svg);
-    background-size: 17px;
+    background-size: 14px;
 }
 
 .social__vk:after {
@@ -1977,7 +2016,7 @@ input.brief__connect-mail {
     margin-bottom: 60px;
 }
 .consult-form__fusion {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 input.consult-form__phone {
     width: 48%;
@@ -1989,12 +2028,14 @@ input.consult-form__mail {
     margin-bottom: 25px;
 }
 .consult-form__agreement {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     max-width: 435px;
     font-weight: 300;
     font-size: 12px;
 }
-.consult-form__politic {
+.consult-form__politic {}
+.consult-form__politic:hover {
+    color: #000;
 }
 .consult-form__send {
     padding: 20px 54px;
@@ -2081,7 +2122,7 @@ input.consult-form__mail {
     font-size: 14px;
     color: #000;
     font-weight: 300;
-    margin: 0 0 115px;
+    margin: 0 0 105px;
     line-height: 170%;
 }
 .project__list-clickers {
