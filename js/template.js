@@ -300,9 +300,14 @@ jQuery(function($){
 		});
 		$('.portfolio-nav__item').removeClass('active');
 		$(this).addClass('active');
-
-		
 	});
+
+
+	// Навигация по портфолию по категориям
+
+	/*$(document).ready(function() {
+	   var current_url = $(location).attr('href');
+	});*/
 
 
 })

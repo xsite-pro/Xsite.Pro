@@ -670,7 +670,7 @@ nav {}
     box-shadow: 0 0 81px rgb(0 1 3 / 12%);
 }
 .pick-menu__top {
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: #fff;
 }
 .portfolio-page .pick-menu__top {
@@ -681,6 +681,7 @@ nav {}
     display: inline-block;
     vertical-align: middle;
     width: 50%;
+    padding: 10px 0;
     max-width: 81px;
 }
 .pick-menu__wrap {
@@ -1805,8 +1806,9 @@ body.menu-appear .drop-menu {
 
 
 /* Страница - Бриф START */
-.brief {
-    padding: 60px 0;
+.brief {}
+.brief--dist {
+    padding: 60px 0 200px;
 }
 .brief__inner {
 }
@@ -2121,6 +2123,11 @@ input.consult-form__mail {
     padding: 2px 16px;
     margin: 0 6px 6px 0;
 }
+.project__list-tegs__item:hover {
+    background-color: #ff8e48;
+    border: 1px solid #ff8e48;
+    color: #fff;
+}
 .project__list-text {
     font-size: 14px;
     color: #000;
@@ -2248,7 +2255,7 @@ input.consult-form__mail {
     transition: .2s all;
 } 
 .service__more:hover {
-    color: #ff7400;
+    color: #000;
 }
 
 
@@ -2410,8 +2417,9 @@ input.consult-form__mail {
 }
 
 
-.company-description {
-    margin: 0 0 100px;
+.company-description {}
+.company-description--dist {
+    margin: 0 0 130px;
 }
 .company-description__inner {
 }
@@ -2531,7 +2539,7 @@ input.consult-form__mail {
     position: relative;
     z-index: 1;
 }
-.reviews__rightbox-avatar.icon-2:before {
+/*.reviews__rightbox-avatar.icon-2:before {
     content: "2";
     display: block;
     color: #fff;
@@ -2549,7 +2557,7 @@ input.consult-form__mail {
     box-sizing: border-box;
     text-align: center;
     line-height: 200%;
-}
+}*/
 .reviews__rightbox-avatar__img {
 }
 .reviews__ladder {
