@@ -91,6 +91,12 @@
 	.brief__subtitle {
 	    font-size: 15px;
 	}
+	.portfolio__text {
+	    padding: 40px 30px;
+	}
+	.portfolio__title {
+	    font-size: 35px;
+	}
 }
 
 @media screen and (max-width:1350px){
@@ -126,6 +132,9 @@
 @media screen and (max-width:1250px){
 	.service__item {
 	    padding: 70px 25px 70px;
+	}
+	.portfolio__item {
+	    width: 33.33%;
 	}
 }
 
@@ -428,6 +437,12 @@
 	}
 }
 
+@media screen and (max-width:900px){
+	.portfolio__title {
+	    font-size: 30px;
+	}
+}
+
 @media screen and (max-width:800px){
 	.contact-list__side {
 		width: 100%;
@@ -576,6 +591,18 @@
 	.brief--dist {
 	    padding: 120px 0 100px;
 	}
+	.portfolio__item {
+	    width: 50%;
+	}
+	.portfolio__project {
+	    font-size: 11px;
+	    margin-bottom: 5px;
+	}
+	.portfolio-nav ul li {
+	    font-size: 11px;
+	    margin-right: 18px;
+	    white-space: nowrap;
+	}
 }
 
 
@@ -698,6 +725,18 @@
 	.map-page__achivement-full {
 	    display: inline-block;
 	    vertical-align: top;
+	}
+}
+
+@media screen and (max-width:550px){
+	.portfolio__text {
+	    padding: 15px 10px;
+	}
+	.portfolio__title {
+	    font-size: 23px;
+	}
+	.portfolio__project {
+	    font-size: 10px;
 	}
 }
 

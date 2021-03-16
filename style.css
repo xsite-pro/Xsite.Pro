@@ -1608,6 +1608,7 @@ body.menu-appear .drop-menu {
     grid-template-rows: repeat(2, 1fr);
 }
 .portfolio__item {
+    width: 25%;
     display: block;
     position: relative;
     overflow: hidden;
@@ -1689,6 +1690,7 @@ body.menu-appear .drop-menu {
     display: inline-block;
     vertical-align: top;
     font-weight: 300;
+    line-height: 110%;
     font-size: 14px;
     margin-bottom: 18px;
     opacity: 0.5;
