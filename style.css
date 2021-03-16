@@ -1229,6 +1229,7 @@ body.menu-appear .drop-menu {
     height: 100vh;
     min-height: 800px;
 }
+.contact-list__cover {}
 .contact-list__middle {}
 .contact-list__side {
     width: 50%;
@@ -1913,7 +1914,7 @@ body.menu-appear .drop-menu {
     opacity:0;
     z-index: 1;
 }
-.brief__list-item label {
+.brief__line .brief__list-item label {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
@@ -1970,6 +1971,7 @@ input[type=checkbox]:checked + label {
     z-index: 2;
     background-color: #ededed;
     transition: .2s all;
+    overflow: hidden;
 }
 .brief__send-top:hover {
     background-color: #ff8e48;

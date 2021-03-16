@@ -19,6 +19,21 @@
 	.project__list-pic__wrap {
 	    margin-left: 0%;
 	}
+	.contact-list__side-atitle {
+	    margin-bottom: 40px;
+	}
+	.contact-list__side-wrphone {
+	    margin-bottom: 25px;
+	}
+	.contact-list__side-wrmail {
+	    margin-bottom: 30px;
+	}
+	.contact-list__side-wrlinks {
+	    margin-bottom: 50px;
+	}
+	.title-extra {
+	    font-size: 100px;
+	}
 
 }
 
@@ -54,6 +69,27 @@
 	}
 	.title-middle {
 	    font-size: 70px;
+	}
+	.contact-list__side {
+	    padding: 0 30px;
+	}
+	.contact-list__side--contacts {
+		padding: 60px 30px 30px 30px;
+	}
+	.consult-phone {
+	    font-size: 40px;
+	}
+	.common-page.extand {
+	    padding-top: 70px;
+	}
+	.brief__title {
+	    max-width: 400px;
+	}
+	.title-extra {
+	    font-size: 80px;
+	}
+	.brief__subtitle {
+	    font-size: 15px;
 	}
 }
 
@@ -100,6 +136,50 @@
 	.title-middle {
 	    font-size: 60px;
 	}
+	.pages .contact-list__side-phone-another {
+		font-size: 43px;
+	}
+	.pages .contact-list__side-wrlinks {
+	    margin-bottom: 30px;
+	}
+
+	.pages .contacts__inner-inn {
+		-webkit-flex-direction: column-reverse;
+	    -ms-flex-direction: column-reverse;
+	    flex-direction: column-reverse;
+	}
+	.pages .contact-list__side {
+		width: 100%;
+	}
+	#xs_map-contacts {
+	    width: 100%;
+	    height: 500px;
+	    margin-left: 0%;
+	}
+	.pages .contact-list {
+		height: auto;
+    	min-height: 500px;
+		padding-bottom: 50px;
+	}
+	.pages .contact-list__side--contacts {
+		margin-bottom: 30px;
+	}
+	.pages {
+		padding-top: 70px;
+	}
+	.contacts__bread-nav {
+	    margin-left: 0;
+	}
+	
+
+
+
+	/* Общий title START */
+	.title {
+		font-size: 50px;
+	}
+	/* Общий title END */
+
 }
 
 @media screen and (max-width:1150px){
@@ -151,6 +231,17 @@
 	.companies__item {
 	    height: 200px;
 	}
+	.pages {
+		padding-top: 100px;
+	}
+	.brief__connect-wrap2 {
+	    width: 100%;
+	}
+	input.brief__connect-phone,
+	input.brief__connect-mail {
+	    width: 45.5%;
+	}
+
 }
 
 @media screen and (max-width:960px){
@@ -382,6 +473,7 @@
 
 	.case__item,
 	.companies__inner,
+	.contact-list,
 	.contact-list {
 	    height: auto;
 	    min-height: initial;
@@ -416,12 +508,83 @@
 	.social {
 	    text-align: center;
 	}
+	.pages .contacts__inner-inn {
+		text-align: center;
+	}
+	.contacts-list__brif-another {
+	    margin: 0 auto;
+	}
+	.pages .contact-list__side-phone-another {
+	    font-size: 35px;
+	}
+	.contact-list__cover {
+	    padding-top: 100px;
+	    padding-bottom: 30px;
+	}
+	.consult-form__send {
+		width: 100%;
+	}
+	.consult-subtitle {
+	    font-size: 14px;
+	    color: #000;
+	    font-weight: 600;
+	    line-height: 150%;
+	    max-width: 445px;
+	    margin: 0 auto;
+	    margin-bottom: 110px;
+	}
+	.consult .contact-list__side--one {
+		margin-bottom: 30px;
+	}
+	.consult {
+	    text-align: center;
+	}
+	.consult h1 {
+		text-align: center;
+	}
+	.consult-phone {
+	    font-size: 33px;
+	}
+	.consult-mail {
+	    margin-bottom: 20px;
+	}
+	.brief__line-title {
+	    font-size: 36px;
+	}
+	.brief__line  .brief__list-item label {
+	    font-size: 13px;
+	    padding: 10px 21px;
+	    margin-right: 15px;
+	}
+	.brief__line {
+	    margin-bottom: 60px;
+	}
+	.brief__title {
+	    max-width: 100%;
+	}
+	.common-page.extand {
+	    padding-top: 40px;
+	}
+	.brief__send-cover {
+	    width: 100%;
+	    margin-bottom: 40px;
+	}
+	.brief__send-top {
+	    width: 100%;
+	    border-radius: 25px;
+	}
+	.brief--dist {
+	    padding: 120px 0 100px;
+	}
 }
 
 
 @media screen and (max-width:750px){
 	.pick-menu__text {
 		display: none;
+	}
+	.service__img {
+	    margin-bottom: 35px;
 	}
 }
 
@@ -433,6 +596,13 @@
 	.companies__item:last-child {
 		display: none;
 	}
+	.title-extra {
+	    font-size: 60px;
+	}
+	.brief__subtitle {
+	    font-size: 14px;
+	}
+
 }
 
 @media screen and (max-width:650px){
@@ -442,6 +612,19 @@
 	}
 	.case__text-btn {
 	    width: 100%;
+	}
+	.brief__send-cover {
+		-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}
+	.brief__send-btn {
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 20px;
+	}
+	.brief__send-text {
+	    max-width: 100%;
 	}
 }
 
@@ -482,6 +665,39 @@
 	}
 	.case__persons-title {
 	    margin-bottom: 8px;
+	}
+	.service__title {
+	    font-size: 21px;
+	    margin-bottom: 18px;
+	}
+	.service__comb li {
+	    font-size: 12px;
+	    margin-bottom: 6px;
+	}
+	.service__img {
+	    width: 60px;
+	    height: 60px;
+	    margin-bottom: 25px;
+	}
+	.service__img.bg1:before {
+	    background-size: 60px;
+	}
+	.brief__line-title {
+	    font-size: 30px;
+	}
+	.brief__line {
+	    margin-bottom: 40px;
+	}
+	.map-page__achivement-title {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.map-page__achivement-go {
+	    margin-right: 20px;
+	}
+	.map-page__achivement-full {
+	    display: inline-block;
+	    vertical-align: top;
 	}
 }
 
@@ -545,7 +761,35 @@
 		font-size: 11px;
 		padding: 15px 25px;
 	}
-
+	.contact-list__side-popup--another {
+		font-size: 14px;
+	}
+	input.consult-form__phone {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	input.consult-form__mail {
+		width: 100%;
+	}
+	.consult-form__face {
+	    margin-bottom: 25px;
+	}
+	.consult-form__fusion {
+	    margin-bottom: 25px;
+	}
+	.consult-subtitle {
+	    margin-bottom: 70px;
+	}
+	.brief__line  .brief__list-item label {
+	    padding: 8px 15px;
+	    margin-right: 10px;
+	}
+	.brief__list-item {
+	    margin-bottom: 10px;
+	}
+	.brief__send-cover {
+	    text-align: center;
+	}
 }
 
 @media screen and (max-width:450px){
@@ -566,5 +810,11 @@
 	}
 	.pick-menu__phone {
 	    font-size: 13px;
+	}
+	.service__item {
+	    padding: 30px 15px 20px;
+	}
+	.service__inner {
+	    padding-bottom: 20px;
 	}
 }
