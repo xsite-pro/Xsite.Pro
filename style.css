@@ -585,6 +585,9 @@ header nav .menu_container .menu_wrapper .footer{
 ::-webkit-scrollbar{
     width: 0px;
 }
+.height-change {
+    padding: 40px 0;
+}
 /* Скрытие скрола END */
 
 
@@ -875,6 +878,12 @@ nav {}
     line-height: 120%;
     font-weight: 700;
     text-transform: uppercase;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 
@@ -1005,6 +1014,13 @@ body.menu-appear .drop-menu {
     font-size: 18px;
     letter-spacing: 0.01em;
     font-weight: 700;
+}
+.case__appear {
+    display: none;
+}
+.case__appear-img {
+    display: inline-block;
+    vertical-align: top;
 }
 .case__text-info {
     margin-bottom: 60px;
@@ -1213,9 +1229,13 @@ body.menu-appear .drop-menu {
     height: 100vh;
     min-height: 800px;
 }
+.contact-list__middle {}
 .contact-list__side {
     width: 50%;
     padding: 0 60px;
+}
+.contact-list__side--first {
+    margin-bottom: 25px;
 }
 .contact-list__side--contacts {
     padding-top: 60px;
