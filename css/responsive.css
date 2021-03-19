@@ -627,7 +627,8 @@
 	.case__item,
 	.companies__inner,
 	.contact-list,
-	.contact-list {
+	.contact-list,
+	.vertical {
 	    height: auto;
 	    min-height: initial;
 	}
@@ -934,6 +935,25 @@
 	.banner__inner {
 	    padding-top: 45%;
 	}
+	.service-company {
+	    margin-bottom: 50px;
+	}
+	.profitable--company {
+	    margin-bottom: 50px;
+	}
+	.banner {
+	    margin-bottom: 40px;
+	}
+	.workspace--space {
+	    padding: 40px 0 40px;
+	}
+	.contact-list__cover {
+	    padding-top: 50px;
+	    padding-bottom: 20px;
+	}
+	.person-offer {
+	    padding: 0 0 50px;
+	}
 }
 
 @media screen and (max-width:550px){
@@ -952,6 +972,12 @@
     .service-company .service__item {
 	    padding: 30px 15px 15px;
     }
+    .title {
+    	font-size: 32px;
+    }
+    .company-description--dist {
+	    margin: 0 0 30px;
+	}
 }
 
 @media screen and (max-width:500px){
@@ -1042,6 +1068,13 @@
 	}
 	.brief__send-cover {
 	    text-align: center;
+	}
+	.company--dist {
+		padding-top: 85px;
+	}
+	.agency__side-item {
+	    width: 48%;
+	    margin-bottom: 50px;
 	}
 }
 

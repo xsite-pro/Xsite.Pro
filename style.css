@@ -2226,6 +2226,9 @@ input.consult-form__mail {
 /* Страница о компании START */
 .company {
 }
+.company--dist {
+    padding-top: 100px;
+}
 .agency {
 }
 .agency__side {
