@@ -52,6 +52,7 @@ textarea{
     line-height: 150%;
     font-weight: 600;
     opacity: 0.5;
+    transition: .2s all;
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
@@ -61,6 +62,7 @@ input[type="email"]:focus,
 textarea{
     opacity: 1;
     color: #000;
+    border-bottom: 1px solid #fd8b45;
 }
 button,
 input,
@@ -896,7 +898,7 @@ nav {}
     right: 0;
     bottom: 0;
     width: 100%;
-    border-bottom: 5px solid #fd8b45;
+    border-bottom: 2px solid #fd8b45;
     z-index: 900;
 }
 body.menu-appear .drop-menu {
@@ -2386,6 +2388,9 @@ input.consult-form__mail {
 .banner {
     margin-bottom: 90px;
 }
+.banner .container_max {
+    padding: 0 20px;
+}
 .banner-one {}
 .banner-two {
     margin-bottom: 0;
@@ -2393,9 +2398,18 @@ input.consult-form__mail {
 .banner__inner {
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 31.61%;
 }
-.banner__img {
+.banner-one .banner__inner {
+    background-image: url(images/pics/yandex-pic.jpg);
 }
+.banner-two .banner__inner {
+    background-image: url(images/pics/1c-partner-pic.jpg);
+}
+.banner__img {}
 .banner__wr-text {
     position: absolute;
     z-index: 2;
