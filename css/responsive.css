@@ -34,6 +34,9 @@
 	.title-extra {
 	    font-size: 100px;
 	}
+	.main-screen__info {
+	    background-position: 80% 50%;
+	}
 
 }
 
@@ -122,6 +125,9 @@
 	}
 	.service-company .service__title {
 		font-size: 25px;
+	}
+	.main-screen__info {
+	    background-position: 100% 50%;
 	}
 }
 
@@ -1106,6 +1112,9 @@
 @media screen and (max-width:400px){
 	.service-company .service__title {
 	    font-size: 20px;
+	}
+	.case__text-title {
+	    min-height: 76px;
 	}
 }
 
