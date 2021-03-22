@@ -2203,6 +2203,9 @@ input.consult-form__mail {
     border: 1px solid #ff8e48;
     color: #fff;
 }
+.project__image {
+    display: none;
+}
 .project__list-text {
     font-size: 14px;
     color: #000;

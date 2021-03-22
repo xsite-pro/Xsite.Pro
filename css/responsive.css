@@ -282,6 +282,25 @@
 	.main-screen__text {
 	    font-size: 70px;
 	}
+	.project__list-pic {
+		display: none;
+	}
+	.project__list-info {
+		width: 100%;
+	}
+	.project__image {
+		display: block;
+		text-align: center;
+	    margin-bottom: 25px;
+	}
+	.project__image-img {
+		width: 80%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.project__list-clickers {
+		padding-bottom: 25px;
+	}
 }
 
 @media screen and (max-width:1050px){
@@ -772,6 +791,10 @@
 	.agency__side-title {
 		text-align: center;
 	}
+	.project__list-title {
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
 }
 
 
@@ -821,6 +844,20 @@
 	}
 	.portfolio-nav .container.min-dist {
 		min-width: 620px;
+	}
+	.project__image-img {
+	    width: 100%;
+	}
+	.project__list-text {
+	    margin: 0 0 70px;
+	}
+	.project__list-clickers__btn {
+	    margin-right: 0;
+	    width: 100%;
+        margin-bottom: 15px;
+	}
+	.project__list-clickers__watch {
+	    margin: 0 auto;
 	}
 
 
@@ -983,6 +1020,10 @@
     }
     .company-description--dist {
 	    margin: 0 0 30px;
+	}
+	.project__list-clickers__btn {
+	    padding: 17px 21px;
+	    font-size: 11px;
 	}
 }
 
