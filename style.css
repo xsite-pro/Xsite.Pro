@@ -856,17 +856,31 @@ nav {}
 }
 
 .main-screen__info {
-    background-color: rgb(0 0 0 / 45%);
-    background-image: url(images/pics/x-back.png);
-    background-position: 62% 50%;
+    /*background-color: rgb(0 0 0 / 45%);*/
+    background-image: url(images/pics/dark-back.png);
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 2;
+}
+.main-screen__info:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-image: url(images/pics/x-back.png);
+    background-position: 62% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .main-screen__text {
     width: 100%;
@@ -886,6 +900,8 @@ nav {}
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+            position: relative;
+            z-index: 4;
 }
 
 
@@ -933,8 +949,6 @@ body.menu-appear .drop-menu {
     bottom: 0;
     z-index: 1;
 }
-
-
 .case__img-common {
     position: absolute;
     z-index: 3;
@@ -942,7 +956,6 @@ body.menu-appear .drop-menu {
     opacity: 0;
     transition: 0.6s all;
 }
-
 .case__img-tablet {
     top: 20%;
     right: 30%;
@@ -967,7 +980,6 @@ body.menu-appear .drop-menu {
     right: -10%;
     opacity: 1;
 }
-
 .slick-current .case__img-tablet {
     top: 18%;
     right: 20%;
@@ -984,9 +996,6 @@ body.menu-appear .drop-menu {
     top: 47%;
     right: 14%;
 }
-
-
-
 .case__inner {
     position: relative;
     z-index: 2;
@@ -1038,8 +1047,6 @@ body.menu-appear .drop-menu {
 }
 .btn-white {
 }
-
-
 .style_blue .case__persons-title,
 .style_blue .case__text-info {
     color: #6997cf;
@@ -1047,19 +1054,16 @@ body.menu-appear .drop-menu {
 .style_blue .case__persons-name {
     color: #c8e1ff;
 }
-
 .style_brown .case__persons-title,
 .style_brown .case__text-info,
 .style_brown .case__persons-name {
     color: #ead7b6;
 }
-
 .style_red .case__persons-title,
 .style_red .case__text-info,
 .style_red .case__persons-name {
     color: #ffc2bd;
 }
-
 .slick-dots{
     margin: 0;
     padding: 0;
@@ -1089,7 +1093,6 @@ body.menu-appear .drop-menu {
 .slick-dots li.slick-active button{
     background: #fff;
 }
-
 .slider-case .slick-dots {
     position: absolute;
     left: 0;
@@ -1129,13 +1132,10 @@ body.menu-appear .drop-menu {
 .slider-case .slick-dots li.slick-active:after {
     width: 100%;
 }
-
-
 .slider-case .slick-dots li.slick-active button {
     padding: 0;
     position: relative;
 }
-
 .slider-case .slick-dots li:before {
     content: "";
     display: block;
@@ -1178,7 +1178,6 @@ body.menu-appear .drop-menu {
 .slider-case .slick-dots li:nth-child(8):before {
     content: "08";
 }
-
 /* Портфолио проектов END */
 
 
@@ -1248,7 +1247,6 @@ body.menu-appear .drop-menu {
     padding-top: 60px;
     padding-bottom: 30px;
 }
-
 .gen_menu {}
 .gen_menu li {
     margin-bottom: 20px;
@@ -1397,7 +1395,7 @@ body.menu-appear .drop-menu {
     transform: scale(1,1);
 }
 .contact-list__side-wrlinks {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .contact-list__side-popup {
     margin-right: 68px;
@@ -1489,9 +1487,6 @@ body.menu-appear .drop-menu {
 .social__item:last-child {
     margin-right: 0;
 }
-
-
-
 .social__item:before,
 .social__item:after {
     content: "";
@@ -1515,7 +1510,6 @@ body.menu-appear .drop-menu {
 .social__item:hover:after {
     opacity: 1;
 }
-
 .social__vk:before {
     background-image: url(images/icons/vk-gray.svg);
     background-size: 17px;
@@ -1535,11 +1529,6 @@ body.menu-appear .drop-menu {
 }
 
 /* Футтер END */
-
-
-
-
-
 
 
 
@@ -1602,9 +1591,6 @@ body.menu-appear .drop-menu {
 .portfolio-nav ul li:hover {
     color: #000;
 }
-
-
-
 .portfolio-list {
     height: 100%;
     position: relative;
@@ -1634,11 +1620,6 @@ body.menu-appear .drop-menu {
     bottom: 50%;
     z-index: 2;
     background-color: #fff;
-    /*-webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);*/
     opacity: 0;
     transition: .3s all;
 }
@@ -1649,11 +1630,6 @@ body.menu-appear .drop-menu {
     left: 0;
     right: 0;
     bottom: 0;
-    /*-webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);*/
     opacity: 0.7;
 }
 .portfolio__item-inside {
@@ -1671,13 +1647,9 @@ body.menu-appear .drop-menu {
     z-index: 1;
     transition: .4s all;
 }
-
 .portfolio__item:hover .portfolio__img {
     transform: scale(1.2);
 }
-
-
-
 .portfolio__text {
     color: #fff;
     display: block;
@@ -1724,7 +1696,6 @@ body.menu-appear .drop-menu {
 .portfolio__item:hover .portfolio__project:before {
     width: 100%;
 }
-
 .portfolio__title {
     display: block;
     font-size: 40px;
@@ -1737,10 +1708,7 @@ body.menu-appear .drop-menu {
     text-shadow: 0px 2px 1px rgb(0 0 0 / 30%), 0 0 0px rgb(0 0 0 / 30%);
     color: #ff8e48;
 }
-
-
 /* Страница портфолио END */
-
 
 
 /* Cтраница услуг START */
@@ -1839,12 +1807,6 @@ body.menu-appear .drop-menu {
 .service__img.bg4:after {
     background-image: url(images/icons/cogwheels-white.svg);
 }
-
-
-
-
-
-
 .service__title {
     color: #000;
     font-weight: 700;
@@ -1874,7 +1836,6 @@ body.menu-appear .drop-menu {
 .service__comb li:last-child {
     margin-bottom: 0;
 }
-
 /* Cтраница услуг END */
 
 
@@ -1935,7 +1896,6 @@ body.menu-appear .drop-menu {
     border: 1px solid transparent;
     margin-right: 20px;
 }
-
 .brief__list-item input[type=checkbox] + label:before,
 .brief__list-item input[type=checkbox] + label:after {
     display: none;
@@ -1951,7 +1911,6 @@ input[type=checkbox]:checked + label {
 .brief__list-item:last-child label {
     margin-right: 0;
 }
-
 .brief__send-line {
 }
 .brief__send-wrap {
@@ -2003,8 +1962,6 @@ input[type=checkbox]:checked + label {
     top: 0;
     left: 0;
 }
-
-
 .brief__send-top:before {
     background-image: url(images/icons/left-arrow-angle.svg);
     opacity: 1;
@@ -2019,8 +1976,6 @@ input[type=checkbox]:checked + label {
 .brief__send-top:hover:after {
     opacity: 1;
 }
-
-
 .brief__connect {}
 .brief__connect-wrap1 {
     width: 100%;
@@ -2042,9 +1997,7 @@ input.brief__connect-phone {
 input.brief__connect-mail {
     width: 48%;
 }
-
 /* Страница - Бриф END */
-
 
 
 /* Форма консультации START */
@@ -2120,8 +2073,6 @@ input.consult-form__mail {
 .consult-form__send {
     padding: 20px 54px;
 }
-
-
 .brief__list .input_upload {
     font-size: 14px;
     color: #ff8e48;
@@ -2133,7 +2084,6 @@ input.consult-form__mail {
     z-index: 1;
     width: 0;
 }
-
 .brief__list .xs_attach_btn {
     display: inline-block;
     vertical-align: top;
@@ -2141,7 +2091,6 @@ input.consult-form__mail {
     position: relative;
     cursor: pointer;
 }
-
 .brief__list .xs_attach_btn:before {
     content: "";
     display: block;
@@ -2158,8 +2107,6 @@ input.consult-form__mail {
 .brief__list .xs_attach_btn .attach-inner {}
 .brief__list .xs_attach_btn .attach-inner .icon {}
 .brief__list .xs_attach_btn .attach-inner .text {}
-
-
 /* Форма консультации END */
 
 
@@ -2222,11 +2169,7 @@ input.consult-form__mail {
     font-size: 14px;
     color: #ff8e48;
 }
-
 /* Страница проекта END */
-
-
-
 
 
 
@@ -2307,12 +2250,9 @@ input.consult-form__mail {
     color: #000000;
     max-width: 180px;
 }
-
-
 .service-company {
     margin-bottom: 190px;
 }
-
 .service-company .service__item {
     padding: 50px 60px 25px;
 }
@@ -2330,17 +2270,17 @@ input.consult-form__mail {
 .service__more {
     font-size: 12px;
     color: #ff7400;
+    line-height: 120%;
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
     transition: .2s all;
 } 
 .service__more:hover {
     color: #000;
+    border-bottom: 1px solid #000;
 }
-
-
-
 .profitable {}
 .profitable--company {
     margin-bottom: 250px;
@@ -2433,9 +2373,6 @@ input.consult-form__mail {
 .banner-two .banner__title {
     max-width: 325px;
 }
-
-
-
 .workspace {}
 .workspace--space {
     padding: 90px 0 70px;
@@ -2499,6 +2436,7 @@ input.consult-form__mail {
     border-bottom: 1px solid #d6d6d5;
 }
 .workspace__item-text__link:hover {
+    color: #ff7400;
     border-bottom: 1px solid transparent;
 }
 
@@ -2508,8 +2446,6 @@ input.consult-form__mail {
     max-width: 500px;
     margin-bottom: 140px;
 }
-
-
 .company-description {}
 .company-description--dist {
     margin: 0 0 130px;
@@ -2586,12 +2522,10 @@ input.consult-form__mail {
     height: 100%;
     margin-left: -42%;
 }
-
 /* Страница как добраться END */
 
 
 /* Страница Отзывов START */
-
 .reviews__inner {
 }
 .reviews__box {
@@ -2632,25 +2566,6 @@ input.consult-form__mail {
     position: relative;
     z-index: 1;
 }
-/*.reviews__rightbox-avatar.icon-2:before {
-    content: "2";
-    display: block;
-    color: #fff;
-    width: 23px;
-    height: 23px;
-    font-size: 10px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-color: #ff8e48;
-    font-weight: 600;
-    position: absolute;
-    right: 1px;
-    bottom: 1px;
-    z-index: 2;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 200%;
-}*/
 .reviews__rightbox-avatar__img {
 }
 .reviews__ladder {
@@ -2696,7 +2611,7 @@ input.consult-form__mail {
 .reviews__clicker {}
 .reviews__clicker-link {
     position: relative;
-    font-weight: 600px;
+    font-weight: 600;
     padding-left: 19px;
     margin-right: 105px;
 }
@@ -2725,12 +2640,9 @@ input.consult-form__mail {
 .reviews__clicker-link--own:before {
     background-image: url(images/icons/cloud_message.svg);
 }
-
 .reviews__clicker-link--own {
     color: #000;
 }
-
-
 .reviews__clicker-link span {
     line-height: 100%;
     font-weight: 600;
@@ -2760,7 +2672,5 @@ input.consult-form__mail {
 .about__star.full {
     background-image: url(images/icons/star-full.svg);
 }
-
 /* Страница Отзывов END */
-
 

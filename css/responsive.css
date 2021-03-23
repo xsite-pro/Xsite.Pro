@@ -6,7 +6,6 @@
 	.slick-current .case__img-phone1 {
 	    right: 1%;
 	}
-
 }
 @media screen and (max-width:1700px){
 	.project__list-pic__wrap {
@@ -37,7 +36,15 @@
 	.main-screen__info {
 	    background-position: 80% 50%;
 	}
-
+	.profitable--company {
+	    margin-bottom: 150px;
+	}
+	.service__item {
+		padding-top: 70px;
+	}
+	.common-page.extand {
+	    padding-top: 100px;
+	}
 }
 
 @media screen and (max-width:1400px){
@@ -129,6 +136,25 @@
 	.main-screen__info {
 	    background-position: 100% 50%;
 	}
+	.reviews__box {
+	    padding: 0 30px;
+	}
+	.main-screen {
+	    min-height: 700px;
+	}
+	.case__text-title {
+		font-size: 65px;
+		margin-bottom: 40px;
+	}
+	.case__persons {
+	    margin-bottom: 40px;
+	}
+	.case__text-info {
+	    margin-bottom: 40px;
+	}
+	.vertical {
+		min-height: 700px;
+	}
 }
 
 @media screen and (max-width:1350px){
@@ -199,7 +225,6 @@
 	.pages .contact-list__side-wrlinks {
 	    margin-bottom: 30px;
 	}
-
 	.pages .contacts__inner-inn {
 		-webkit-flex-direction: column-reverse;
 	    -ms-flex-direction: column-reverse;
@@ -231,16 +256,11 @@
 	    width: 50%;
 	    margin-bottom: 40px;
 	}
-	
-
-
-
 	/* Общий title START */
 	.title {
 		font-size: 50px;
 	}
 	/* Общий title END */
-
 }
 
 @media screen and (max-width:1150px){
@@ -329,6 +349,31 @@
 	.banner .container_max {
 	    padding: 0 15px;
 	}
+	.reviews__box {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.reviews__leftbox {
+		margin-bottom: 50px;
+	}
+	.reviews__leftbox-text p {
+	    max-width: 100%;
+	}
+	.reviews__ladder {
+	    margin-bottom: 60px;
+	}
+	.reviews__rightbox {
+		padding-bottom: 30px;
+	}
+	.reviews__leftbox-title {
+	    margin-bottom: 50px;
+	}
+	.slider-case .slick-dots {
+	    bottom: 20px;
+	}
+	.case__text {
+    padding-bottom: 80px;
+}
 }
 
 @media screen and (max-width:1000px){
@@ -525,7 +570,6 @@
 	header nav .menu_wrapper ul li ul.sub-menu li a{
 	    padding: 15px 25px;
 	}
-
 }
 
 
@@ -571,8 +615,6 @@
 	    max-width: 100%;
 	    width: 100%;
 	}
-
-
 	.workspace__item-title__text {
 	    font-size: 25px;
 	}
@@ -648,7 +690,6 @@
 	.contact-list__side-wrlinks {
 	    margin-bottom: 30px;
 	}
-
 	.case__item,
 	.companies__inner,
 	.contact-list,
@@ -859,8 +900,6 @@
 	.project__list-clickers__watch {
 	    margin: 0 auto;
 	}
-
-
 }
 
 @media screen and (max-width:650px){
@@ -901,7 +940,6 @@
     	padding: 0;
     	margin-bottom: 30px;
 	}
-
 }
 
 @media screen and (max-width:600px){
@@ -1052,10 +1090,6 @@
 	.gen_menu li a {
 	    font-size: 28px;
 	}
-
-
-
-
 	.contact-list__side--first {
 	    margin-bottom: 20px;
 	}
@@ -1147,6 +1181,9 @@
 	}
 	.banner__inner {
 	    padding-top: 55%;
+	}
+	.reviews__clicker-link {
+	    margin-bottom: 10px;
 	}
 }
 
